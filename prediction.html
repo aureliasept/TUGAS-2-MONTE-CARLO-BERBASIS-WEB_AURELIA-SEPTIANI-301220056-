@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Hasil Prediksi</h1>
+<p>Prediksi jumlah penanganan sampah untuk tahun {{ year }} adalah {{ prediction | round(2) }} ton.</p>
+<a href="{{ url_for('index_page') }}">Kembali</a>
+{% endblock %}
